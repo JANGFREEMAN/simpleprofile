@@ -1,0 +1,98 @@
+
+/*全局设置*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*清除浮动*/
+.cf::before , .cf::after{
+  content:'';
+  display: 'table'
+}
+
+.cf::after{
+  clear: both
+}
+
+/*头部内容*/
+.header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    padding-left: 100px;
+    padding-right: 177px;
+}
+.header .logo {
+  height: 100%;
+  line-height: 100px;
+  float: left
+}
+
+.header .logo img{
+  vertical-align: middle;
+}
+
+.header .spacer {
+  float: left;
+  height: 100%;
+  width: auto
+}
+
+.header .nav{
+  height: 100%;
+  width: auto;
+  line-height: 100px;
+  float: right
+}
+
+.nav li {
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 35px;
+  color: rgb(112,112,112);
+}
+
+.nav li:hover {
+  background: rgb(255,86,114);
+  color: rgb(255,255,255);
+  transition: background .5s ease-in-out;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px
+}
+
+.nav::after{
+  content: url('../img/search.png');
+}
+
+/*主体内容*/
+.content-top {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background-color: #fc758c;
+  background: url('../img/bg.jpg');
+  background-size: cover
+}
+.content-top::after {
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fc758c;
+  opacity: 0.7
+}
+
+/*尾部内容*/
