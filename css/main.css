@@ -131,4 +131,65 @@ body {
 .ui-text a:hover{
   cursor: pointer;
 }
+
+.content-middle{
+  width: 100%;
+  color: #707070;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.content-middle .icon {
+  margin-left: -10px;
+}
+
+.content-middle .icon a{
+  margin-left: 10px;
+}
+
+
+.content-middle .list-options{
+  list-style: none;
+  margin-top: 70px;
+}
+
+.content-middle .list-options li{
+    height: 36px;
+    display: inline-block;
+    line-height: 36px;
+}
+
+.content-middle .list-options li:hover{
+   content: '';
+   color: rgb(255,255,255);
+   background-color: #ff5672;
+   transition: background .5s ease-in-out;
+}
+
+.content-middle .list-options li a{
+  text-decoration: none;
+  color: #707070;
+  font-size: 14px;
+  padding:0 15px;
+}
+
+.content-bottom {
+  width: 1170px;
+  margin:  75px auto;
+}
+
+.content-bottom .ui-imgs {
+  margin-left: -30px;
+  font-size: 0 ;//去除block间距问题
+}
+
+.content-bottom .ui-imgs li {
+  display: inline-block;
+  list-style: none;
+  width: 370px;
+  margin-left: 30px;
+  background-size: cover;
+}
+
+
 /*尾部内容*/
