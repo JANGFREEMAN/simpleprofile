@@ -175,7 +175,7 @@ body {
 
 .content-bottom {
   width: 1170px;
-  margin:  75px auto;
+  margin:  75px auto 0;
 }
 
 .content-bottom .ui-imgs {
@@ -237,6 +237,50 @@ body {
   width: 100%;
   z-index: -1;
   background-position: center;
+}
+
+.content-bottom .load-button{
+  display: block;
+  width: 170px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin: 10px auto 0;
+  background-color: #ff5672 ;
+  color: #fff;
+  font-size: 16px;
+}
+
+.content-bottom .load-button:hover{
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 75px;
+  color: #ccd7dd;
+  font-size: 13px;
+}
+
+.footer p{
+  text-align: center;
+}
+
+.footer p span{
+  color: #ff5672;
+}
+
+
+.footer .share-icon{
+  margin: 40px 0 40px -10px;
+  text-align: center;
+}
+
+.footer .share-icon a{
+  margin-left: 10px;
+}
+
+.footer .share-icon a:hover{
+  cursor: pointer;
 }
 
 
