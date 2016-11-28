@@ -24,7 +24,7 @@ function isImageLoad(img,callback){
 */
 function getImageDataArr(url){
   var imageDataArr = [
-      {width:"370px",height:'246.78px',url:'./img/1.jpg'}
+      {width:"370px",height:'246.78px',url:'./img/3.jpg'}
     ]
     // var imageDataArr = [
     //     {width:"10px",height:'246.78px',url:''},
