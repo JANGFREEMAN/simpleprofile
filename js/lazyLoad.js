@@ -45,13 +45,14 @@ function getImageDataArr(url){
 function init(imageDataArr,posterImages){
    for(var i = 0 ; i < posterImages.length ; i++){
       var posterImage = posterImages[i],
-          imageData = imageDataArr[0];
+          imageData = imageDataArr[0],
+          styleTemplate = 'background-color: #fc758c;width:{width};height:{height}';
       //设置宽高
       posterImage.width = imageData.width;
       posterImage.height = imageData.height;
 
       //设置背景颜色(这边可以通过聚合算法算图片的主要颜色)
-      posterImage.style = 'background-color: red';
+      posterImage.style = styleTemplate.replace('{width}',imageData.width).replace('{height}',imageData.height);
 
       //判断图片有没有加载
       var image = $(posterImage).find('img')[0];
