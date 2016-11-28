@@ -1,11 +1,11 @@
-window.onload = function(){
+// window.onload = function(){
 
   //获取数据
   var imageDataArr = getImageDataArr(''),
       posterImages = $('ul.ui-imgs li');
 
   init(imageDataArr,posterImages);
-}
+// }
 
 
 /*
