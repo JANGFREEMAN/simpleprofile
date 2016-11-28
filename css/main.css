@@ -237,6 +237,12 @@ body {
   width: 100%;
   z-index: -1;
   background-position: center;
+  opacity: 0;
+  transition: opacity .2s ease-in-out
+}
+
+.content-bottom .ui-imgs li img.load{
+  opacity: 1
 }
 
 .content-bottom .load-button{
