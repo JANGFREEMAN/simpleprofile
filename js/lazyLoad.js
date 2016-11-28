@@ -1,12 +1,9 @@
-// window.onload = function(){
 
   //获取数据
   var imageDataArr = getImageDataArr(''),
       posterImages = $('ul.ui-imgs li');
 
   init(imageDataArr,posterImages);
-// }
-
 
 /*
   判断图片是否加载完
@@ -20,21 +17,13 @@ function isImageLoad(img,callback){
 }
 
 /*
-  获取图片数据
+  获取图片数据(可以从服务端获取数据)
 */
 function getImageDataArr(url){
   var imageDataArr = [
         {width:"370px",height:'246.78px',url:'./img/1.jpg'},
-      {width:"370px",height:'246.78px',url:'./img/3.jpg'}
+        {width:"370px",height:'246.78px',url:'./img/3.jpg'}
     ]
-    // var imageDataArr = [
-    //     {width:"10px",height:'246.78px',url:''},
-    //     {width:"10px",height:'10px',url:''},
-    //     {width:"10px",height:'10px',url:''},
-    //     {width:"10px",height:'10px',url:''},
-    //     {width:"10px",height:'10px',url:''},
-    //     {width:"10px",height:'10px',url:''}
-    //   ]
     return imageDataArr;
 }
 
@@ -49,11 +38,8 @@ function init(imageDataArr,posterImages){
           j = i % 2 == 0 ? 0 : 1,
           imageData = imageDataArr[j],
           styleTemplate = 'background-color: #fc758c;width:{width};height:{height}';
-      //设置宽高
-      posterImage.width = imageData.width;
-      posterImage.height = imageData.height;
 
-      //设置背景颜色(这边可以通过聚合算法算图片的主要颜色)
+      //设置样式(这边可以通过聚合算法算图片的主要颜色)
       posterImage.style = styleTemplate.replace('{width}',imageData.width).replace('{height}',imageData.height);
 
       //判断图片有没有加载
