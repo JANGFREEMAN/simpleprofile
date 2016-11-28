@@ -24,6 +24,7 @@ function isImageLoad(img,callback){
 */
 function getImageDataArr(url){
   var imageDataArr = [
+        {width:"370px",height:'246.78px',url:'./img/1.jpg'},
       {width:"370px",height:'246.78px',url:'./img/3.jpg'}
     ]
     // var imageDataArr = [
@@ -45,7 +46,8 @@ function getImageDataArr(url){
 function init(imageDataArr,posterImages){
    for(var i = 0 ; i < posterImages.length ; i++){
       var posterImage = posterImages[i],
-          imageData = imageDataArr[0],
+          j = i % 2 == 0 ? 0 : 1,
+          imageData = imageDataArr[j],
           styleTemplate = 'background-color: #fc758c;width:{width};height:{height}';
       //设置宽高
       posterImage.width = imageData.width;
